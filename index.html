@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeneas' Journey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="map-container">
+        <canvas id="mapCanvas"></canvas>
+        <img src="map-image.jpg" alt="Map" class="map">
+        <!-- Pins -->
+        <div class="pin" style="top: 50%; left: 10%;" onclick="openModal(event, 'location1')"></div>
+        <div class="pin" style="top: 50%; left: 20%;" onclick="openModal(event, 'location2')"></div>
+        <div class="pin" style="top: 50%; left: 30%;" onclick="openModal(event, 'location3')"></div>
+        <div class="pin" style="top: 50%; left: 40%;" onclick="openModal(event, 'location4')"></div>
+        <div class="pin" style="top: 50%; left: 50%;" onclick="openModal(event, 'location5')"></div>
+        <div class="pin" style="top: 50%; left: 60%;" onclick="openModal(event, 'location6')"></div>
+        <div class="pin" style="top: 50%; left: 70%;" onclick="openModal(event, 'location7')"></div>
+        <!-- add text boxes above each pin -->
+        <div class="pin-text" style="top: 45%; left: 8%;">Birth 43 BCE</div>
+        <div class="pin-text" style="top: 45%; left: 18%;">Orator 25 BCE</div>
+        <div class="pin-text" style="top: 45%; left: 28%;">Debut 16 BCE</div>
+        <div class="pin-text" style="top: 45%; left: 38%;">Exile 8 CE</div>
+        <div class="pin-text" style="top: 45%; left: 48%;">Opuses 8 CE</div>
+        <div class="pin-text" style="top: 45%; left: 58%;">Death 17 CE</div>
+        <div class="pin-text" style="top: 45%; left: 68%;">Legacy Current</div>
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" class="modal-content">
+        <div id="modalText" class="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
